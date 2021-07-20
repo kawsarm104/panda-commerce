@@ -26,7 +26,7 @@
   <body>
     <!-- navbar part start  -->
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light ">
+      <nav class="navbar navbar-expand-lg fixed-top top-0 navbar-light bg-light ">
         <div class="container">
           <a class="navbar-brand" href="#home">
             <img
@@ -333,15 +333,39 @@
          <div>
              <h1>LET'S STAY IN TOUCH</h1>
              <p>Get updates on sales, specials and more</p>
-             <input class="form-control" type="text" placeholder="Your Email">
+             <input class="form-control" type="text" placeholder="Your Email" >
              <br>
-             <button class="panda-btn-buy-now">SUBMIT</button>
+             <button class="panda-btn-buy-now " data-bs-toggle="modal" data-bs-target="#exampleModal">SUBMIT</button>
          </div>
      </section>
  </main>
  <footer class="mt-5 text-center">
      <p><small>©2025. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
- </footer>
+    <!-- Modal  -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reply Message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-success">
+        You have successfully subscribe 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+    </footer>
 
     <!-- Bootstrap Script  -->
     <script
